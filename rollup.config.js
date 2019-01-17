@@ -1,4 +1,3 @@
-import uglify from 'rollup-plugin-uglify'
 import babel from 'rollup-plugin-babel'
 
 const config = {
@@ -14,8 +13,7 @@ const config = {
     plugins: [
         babel({
             exclude: "node_modules/**"
-        }),
-        uglify()
+        })
     ]
 }
 
